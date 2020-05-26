@@ -1,0 +1,50 @@
+@import "../global/vars";
+@import "../global/mixins";
+
+/*
+  __  __    _    ___ _   _
+ |  \/  |  / \  |_ _| \ | |
+ | |\/| | / _ \  | ||  \| |
+ | |  | |/ ___ \ | || |\  |
+ |_|  |_/_/   \_\___|_| \_|
+*/
+
+//LAZY LOAD IMAGES
+// img.lazy-load {
+// 	opacity: 1;
+// 	transition: opacity 0.3s;
+// }
+//
+// img[data-src] {
+// 	opacity: 0;
+// }
+
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+
+
+.row {
+  float: left;
+  width: 100%;
+  max-width: none;
+}
+
+a {
+  color: $color-primary;
+  font-family: $font-2;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.row {
+  div {
+    color: white;
+  }
+}

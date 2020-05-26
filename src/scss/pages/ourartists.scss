@@ -1,0 +1,210 @@
+/*
+   ___  _   _ ____       _    ____ _____ ___ ____ _____ ____  
+  / _ \| | | |  _ \     / \  |  _ \_   _|_ _/ ___|_   _/ ___| 
+ | | | | | | | |_) |   / _ \ | |_) || |  | |\___ \ | | \___ \ 
+ | |_| | |_| |  _ <   / ___ \|  _ < | |  | | ___) || |  ___) |
+  \___/ \___/|_| \_\ /_/   \_\_| \_\|_| |___|____/ |_| |____/ 
+                                               
+ */
+
+.body-container__ourartists {
+  margin-top: 60px;
+
+  h2 {
+    margin-bottom: 20px;
+
+    @include mq(md) {
+      margin-bottom: 70px;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 70px;
+    }
+  }
+
+  h3 {
+  }
+}
+
+.our-artists-tiles-container {
+  float: left;
+  width: 100%;
+
+  @include mq(md) {
+    float: left;
+    width: 100%;
+  }
+
+  @include mq(sm) {
+    float: left;
+    width: 100%;
+  }
+
+  .ourartists-tile {
+    position: relative;
+    float: left;
+
+    @include mq(jumbo) {
+      width: 33.333%;
+    }
+
+    @include mq(xl) {
+      width: 33.333%;
+    }
+
+    @include mq(lg) {
+      width: 33.333%;
+    }
+
+    @include mq(md) {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    @include mq(sm) {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .image-container {
+      position: relative;
+      max-width: 80%;
+      margin: 25px auto;
+
+      &:hover {
+        &:before {
+          content: "";
+          position: absolute;
+          top: 9px;
+          bottom: 10px;
+          right: 10px;
+          left: 12px;
+          width: calc(100% - 23px);
+          height: calc(100% - 22px);
+          z-index: 102;
+          transition: all 150ms ease-in-out;
+          background-color: rgba(1, 126, 119, 0);
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        bottom: 10px;
+        right: 10px;
+        left: 12px;
+        width: calc(100% - 23px);
+        height: calc(100% - 22px);
+        z-index: 102;
+        background-color: rgba(1, 126, 119, 0.3);
+
+        @include mq(md) {
+          display: none;
+        }
+
+        @include mq(sm) {
+          display: none;
+        }
+      }
+
+      img {
+        position: relative;
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+        }
+      }
+    }
+
+    .content-container {
+      position: relative;
+
+      h4 {
+        margin-top: 10px;
+        margin-bottom: 7px;
+        font-family: $font-1;
+        font-size: 27px;
+        font-weight: 900;
+        color: white;
+
+        @include mq(md) {
+          margin-top: 20px;
+          font-size: 4.5rem;
+          line-height: 145%;
+        }
+
+        @include mq(sm) {
+          margin-top: 20px;
+          font-size: 4.5rem;
+          line-height: 145%;
+        }
+      }
+
+      a.instagram-link {
+        color: $yellow-potion;
+        font-weight: 600;
+
+        @include mq(md) {
+          font-size: 60px;
+          line-height: 145%;
+        }
+
+        @include mq(sm) {
+          font-size: 60px;
+          line-height: 145%;
+        }
+      }
+
+      p.bio-body-text {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-family: $font-2;
+        font-size: 1rem;
+        color: white;
+        line-height: 135%;
+
+        @include mq(md) {
+          font-size: 2.8rem;
+          line-height: 145%;
+        }
+
+        @include mq(sm) {
+          font-size: 2.8rem;
+          line-height: 145%;
+        }
+      }
+
+      .btn {
+        @include mq(md) {
+          display: inherit;
+          margin-top: 60px;
+          margin-bottom: 150px;
+          text-align: center;
+        }
+
+        @include mq(sm) {
+          display: inherit;
+          margin-top: 60px;
+          margin-bottom: 150px;
+          text-align: center;
+        }
+      }
+
+      .ourartists-link {
+      }
+    }
+  }
+}

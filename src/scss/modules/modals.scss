@@ -1,0 +1,191 @@
+/*
+  _   _ _____    _    ____ ___ _   _  ____ ____  
+ | | | | ____|  / \  |  _ \_ _| \ | |/ ___/ ___| 
+ | |_| |  _|   / _ \ | | | | ||  \| | |  _\___ \ 
+ |  _  | |___ / ___ \| |_| | || |\  | |_| |___) |
+ |_| |_|_____/_/   \_\____/___|_| \_|\____|____/ 
+                                                                        
+ */
+.reveal {
+  width: 900px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border: 0;
+  background-color: black;
+  border: 0;
+  border-top: 4px solid $orange-potion;
+  z-index: 1000001;
+
+  @include mq(md) {
+    top: 0 !important;
+    width: 100%;
+    padding-top: 50px;
+    border-top: 10px solid $orange-potion;
+  }
+
+  @include mq(sm) {
+    top: 0 !important;
+    width: 100%;
+    padding-top: 50px;
+    border-top: 10px solid $orange-potion;
+  }
+
+  .section-left {
+    display: block;
+
+    iframe {
+      width: 100%;
+      height: auto;
+
+      @include mq(md) {
+        float: left;
+        min-height: 500px;
+        margin-bottom: 20px;
+      }
+    
+      @include mq(sm) {
+        float: left;
+        min-height: 500px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .btn {
+      display: inherit;
+      width: 100%;
+      margin-bottom: 8px;
+      text-align: center;
+
+      @include mq(md) {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    
+      @include mq(sm) {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(1) {
+        float: left;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .section-right {
+    padding-left: 50px;
+  }
+
+  h2 {
+  }
+
+  h3 {
+    @include mq(md) {
+      margin-bottom: 25px;
+    }
+
+    @include mq(sm) {
+      margin-bottom: 25px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .body-text {
+    font-size: 14px;
+    color: white;
+
+    @include mq(md) {
+      font-size: 2.8rem;
+    }
+  
+    @include mq(sm) {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+.reveal-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100000;
+
+  .btn {
+    @include mq(md) {
+      font-size: 2.2rem;
+    }
+  
+    @include mq(sm) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.close-button {
+  float: right;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: $orange-potion;
+  text-align: center;
+  z-index: 100000000001;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include mq(md) {
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    background: $orange-potion;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    z-index: 1000000000011;
+  }
+  
+  @include mq(sm) {
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    background: $orange-potion;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    z-index: 1000000000011;
+  }
+
+  img {
+    position: relative;
+    top: -4px;
+    display: block;
+
+    @include mq(md) {
+      position: relative;
+      left: 15px;
+      transform: scale(1.5);
+    }
+    
+    @include mq(sm) {
+      position: relative;
+      left: 15px;
+      transform: scale(1.5);
+    }
+  }
+}

@@ -1,0 +1,122 @@
+/*
+  _   _ _____    _    ____ ___ _   _  ____ ____  
+ | | | | ____|  / \  |  _ \_ _| \ | |/ ___/ ___| 
+ | |_| |  _|   / _ \ | | | | ||  \| | |  _\___ \ 
+ |  _  | |___ / ___ \| |_| | || |\  | |_| |___) |
+ |_| |_|_____/_/   \_\____/___|_| \_|\____|____/ 
+                                                                        
+ */
+
+ h1, h2, h3, h4, h5, h6 {
+
+ }
+
+h1 {
+  font-family: $font-1;
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+
+  @include mq(jumbo) {
+
+  }
+  
+  @include mq(xl) {
+  
+  }
+  
+  @include mq(lg) {
+  
+  }
+  
+  @include mq(md) {
+
+  }
+  
+  @include mq(sm) {
+    font-size: 35px;
+  }
+}
+
+@font-face {
+  font-family: 'Limelight';
+  src: url('../../fonts/Limelight.ttf') format('truetype');
+}
+
+h2 {
+  font-size: 55px;
+  font-weight: 900;
+  color: $white;
+  letter-spacing: 3px;
+  font-family: Limelight;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 1px;
+
+  @include mq(jumbo) {
+
+  }
+  
+  @include mq(xl) {
+  
+  }
+  
+  @include mq(lg) {
+  
+  }
+  
+  @include mq(md) {
+    margin-bottom: 65px;
+    font-size: 100px;
+  }
+  
+  @include mq(sm) {
+    margin-bottom: 65px;
+    font-size: 150px;
+  }
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-family: $font-1;
+  font-size: 18px; 
+  font-weight: 900;
+  color: $yellow-potion;
+  text-transform: uppercase;
+
+  @include mq(jumbo) {
+
+  }
+  
+  @include mq(xl) {
+  
+  }
+  
+  @include mq(lg) {
+  
+  }
+  
+  @include mq(md) {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 40px; 
+  }
+  
+  @include mq(sm) {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    font-size: 40px; 
+  }
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+  
+}

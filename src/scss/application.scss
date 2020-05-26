@@ -1,0 +1,77 @@
+/*
+  _     _____ ____    _    ______   __  _____  _  _____ _____ ___   ___  
+ | |   | ____/ ___|  / \  / ___\ \ / / |_   _|/ \|_   _|_   _/ _ \ / _ \ 
+ | |   |  _|| |  _  / _ \| |    \ V /    | | / _ \ | |   | || | | | | | |
+ | |___| |__| |_| |/ ___ \ |___  | |     | |/ ___ \| |   | || |_| | |_| |
+ |_____|_____\____/_/   \_\____| |_|     |_/_/   \_\_|   |_| \___/ \___/ 
+                                                                         
+ */
+
+ @charset "UTF-8";
+ 
+ /* ## Base ## */
+ @import "base/reset";
+ @import "base/normalize";
+ @import "base/main";
+ @import "base/type";
+ @import "base/helpers";
+ 
+ /* ## Modules ## */
+ @import "modules/buttons";
+ @import "modules/headings";
+ @import "modules/icons";
+ @import "modules/modals";
+ @import "modules/nav";
+ @import "modules/typography";
+
+ /* ## Pages ## */
+ @import "pages/home";
+ @import "pages/about";
+ @import "pages/ourartists";
+ @import "pages/healing";
+ @import "pages/location";
+
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+ @import url("https://use.typekit.net/wve2wmi.css");
+
+ html {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: black;
+ }
+
+ body {
+    position: relative;
+    height: 100vh;
+    font-family: $font-1;
+    background-image: url("../../img/site-background.jpg");
+    background-size: cover;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @include mq(md) {
+      height: auto;
+      border-top: 8px solid $orange-potion;
+    }
+    
+    @include mq(sm) {
+      height: auto;
+      border-top: 8px solid $orange-potion;
+    }
+}
+
+.wow {
+  margin-top: 15px;
+  visibility: hidden; 
+
+  @include mq(md) {
+    visibility: visible !important; 
+  }
+  
+  @include mq(sm) {
+    visibility: visible !important; 
+  }
+}

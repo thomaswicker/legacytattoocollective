@@ -1,0 +1,1 @@
+$("div.foo").toggleClass((function(){return $(this).parent().is(".bar")?"happy":"sad"}));

@@ -1,0 +1,73 @@
+/*
+  ____  _   _ _____ _____ ___  _   _ ____  
+ | __ )| | | |_   _|_   _/ _ \| \ | / ___| 
+ |  _ \| | | | | |   | || | | |  \| \___ \ 
+ | |_) | |_| | | |   | || |_| | |\  |___) |
+ |____/ \___/  |_|   |_| \___/|_| \_|____/ 
+                                                                                
+ */
+
+.btn {
+  padding: 10px 20px;
+  background-color: $teal-potion;
+  font-family: $font-1;
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover {
+    background-color: lighten($teal-potion, 10%);
+    color: black;
+    text-decoration: none;
+  }
+
+  @include mq(jumbo) {
+
+  }
+  
+  @include mq(xl) {
+  
+  }
+  
+  @include mq(lg) {
+  
+  }
+  
+  @include mq(md) {
+    padding: 40px 60px;
+    background-color: $teal-potion;
+    font-family: $font-1;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  
+  @include mq(sm) {
+    padding: 40px 60px;
+    background-color: $teal-potion;
+    font-family: $font-1;
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+
+  &.location-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px 10px 20px;
+
+    @include mq(md) {
+      padding: 40px 60px;
+    }
+    
+    @include mq(sm) {
+      padding: 40px 60px;
+    }
+
+    span {
+      position: relative;
+      top: -2px;
+    }
+  }
+}

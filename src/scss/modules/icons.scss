@@ -1,0 +1,27 @@
+/*
+  ___ ____ ___  _   _ ____  
+ |_ _/ ___/ _ \| \ | / ___| 
+  | | |  | | | |  \| \___ \ 
+  | | |__| |_| | |\  |___) |
+ |___\____\___/|_| \_|____/ 
+                                                                             
+ */
+
+.arrow-icon {
+  position: relative;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 5px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+
+  &.white {
+    background-image: url("../../svg/arrow-icon__white.svg");
+  }
+
+  &.black {
+    background-image: url("../../svg/arrow-icon__black.svg");
+  }
+}
